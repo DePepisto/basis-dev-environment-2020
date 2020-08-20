@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ea43e5-318b-48b2-9c66-23d916a354a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gulp-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/gulp-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597964035678</updated>
-      <workItem from="1597964036705" duration="1137000" />
+      <workItem from="1597964036705" duration="1299000" />
+      <workItem from="1597965434455" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Änderungen Gulpfile">
       <created>1597964949486</created>
@@ -88,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597964949486</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Änderungen Basis Konfiguration">
+      <created>1597965209817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597965209817</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,7 +105,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Änderungen Gulpfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Änderungen Gulpfile" />
+    <MESSAGE value="Änderungen Basis Konfiguration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Änderungen Basis Konfiguration" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -112,33 +122,33 @@
       <screen x="0" y="23" width="2560" height="1348" />
     </state>
     <state x="683" y="266" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1348@0.23.2560.1348" timestamp="1597964197386" />
-    <state x="756" y="93" key="CommitChangelistDialog2" timestamp="1597964949403">
+    <state x="756" y="93" key="CommitChangelistDialog2" timestamp="1597965209740">
       <screen x="0" y="23" width="2560" height="1348" />
     </state>
-    <state x="756" y="93" key="CommitChangelistDialog2/0.23.2560.1348@0.23.2560.1348" timestamp="1597964949403" />
-    <state width="2340" height="304" key="GridCell.Tab.0.bottom" timestamp="1597964744292">
+    <state x="756" y="93" key="CommitChangelistDialog2/0.23.2560.1348@0.23.2560.1348" timestamp="1597965209740" />
+    <state width="2340" height="304" key="GridCell.Tab.0.bottom" timestamp="1597965336932">
       <screen x="0" y="23" width="2560" height="1348" />
     </state>
-    <state width="2340" height="304" key="GridCell.Tab.0.bottom/0.23.2560.1348@0.23.2560.1348" timestamp="1597964744292" />
-    <state width="2340" height="304" key="GridCell.Tab.0.center" timestamp="1597964744292">
+    <state width="2340" height="304" key="GridCell.Tab.0.bottom/0.23.2560.1348@0.23.2560.1348" timestamp="1597965336932" />
+    <state width="2340" height="304" key="GridCell.Tab.0.center" timestamp="1597965336931">
       <screen x="0" y="23" width="2560" height="1348" />
     </state>
-    <state width="2340" height="304" key="GridCell.Tab.0.center/0.23.2560.1348@0.23.2560.1348" timestamp="1597964744292" />
-    <state width="2340" height="304" key="GridCell.Tab.0.left" timestamp="1597964744292">
+    <state width="2340" height="304" key="GridCell.Tab.0.center/0.23.2560.1348@0.23.2560.1348" timestamp="1597965336931" />
+    <state width="2340" height="304" key="GridCell.Tab.0.left" timestamp="1597965336931">
       <screen x="0" y="23" width="2560" height="1348" />
     </state>
-    <state width="2340" height="304" key="GridCell.Tab.0.left/0.23.2560.1348@0.23.2560.1348" timestamp="1597964744292" />
-    <state width="2340" height="304" key="GridCell.Tab.0.right" timestamp="1597964744292">
+    <state width="2340" height="304" key="GridCell.Tab.0.left/0.23.2560.1348@0.23.2560.1348" timestamp="1597965336931" />
+    <state width="2340" height="304" key="GridCell.Tab.0.right" timestamp="1597965336932">
       <screen x="0" y="23" width="2560" height="1348" />
     </state>
-    <state width="2340" height="304" key="GridCell.Tab.0.right/0.23.2560.1348@0.23.2560.1348" timestamp="1597964744292" />
-    <state x="658" y="144" key="SettingsEditor" timestamp="1597965039015">
+    <state width="2340" height="304" key="GridCell.Tab.0.right/0.23.2560.1348@0.23.2560.1348" timestamp="1597965336932" />
+    <state x="658" y="144" key="SettingsEditor" timestamp="1597965335123">
       <screen x="0" y="23" width="2560" height="1348" />
     </state>
-    <state x="658" y="144" key="SettingsEditor/0.23.2560.1348@0.23.2560.1348" timestamp="1597965039015" />
-    <state x="759" y="270" key="Vcs.Push.Dialog.v2" timestamp="1597964957690">
+    <state x="658" y="144" key="SettingsEditor/0.23.2560.1348@0.23.2560.1348" timestamp="1597965335123" />
+    <state x="759" y="270" key="Vcs.Push.Dialog.v2" timestamp="1597965215306">
       <screen x="0" y="23" width="2560" height="1348" />
     </state>
-    <state x="759" y="270" key="Vcs.Push.Dialog.v2/0.23.2560.1348@0.23.2560.1348" timestamp="1597964957690" />
+    <state x="759" y="270" key="Vcs.Push.Dialog.v2/0.23.2560.1348@0.23.2560.1348" timestamp="1597965215306" />
   </component>
 </project>
