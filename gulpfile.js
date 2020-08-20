@@ -41,7 +41,7 @@ const gulpPlumber = require('gulp-plumber');
 function reload(cb) {
     browserSync.reload();
     cb();
-};
+}
 
 // SERVER INITIALISIEREN 
 
@@ -52,7 +52,7 @@ function serve(cb) {
         }
     });
     cb();
-};
+}
 
 // HTML für die Entwicklung
 
@@ -73,7 +73,7 @@ function html_dev() {
         }))
         // Schreibe HTML Dateien in das Verzeichnis .dist
         .pipe(gulp.dest(config.html.dist));
-};
+}
 
 // HTML MINIFY
 
@@ -94,7 +94,7 @@ function html() {
         }))
         // Schreibe minimierte HTML Dateien in das Verzeichnis .dist
         .pipe(gulp.dest(config.html.dist));
-};
+}
 
 // CSS für die Entwicklung.
 function css_dev() {
@@ -131,7 +131,7 @@ function css_dev() {
         // Page aktualisieren 
         .pipe(browserSync.stream());
 
-};
+}
 
 // SASS ZU CSS MINIFY
 
@@ -169,7 +169,7 @@ function css() {
         // Page aktualisieren 
         .pipe(browserSync.stream());
 
-};
+}
 // KOMPILIEREN JAVASCRIPT 
 function script() {
     // JavaScript Dateien aufnehmen 
@@ -198,7 +198,7 @@ function script() {
         .pipe(sourcemaps.write(''))
         // Schreibe JavaScript Dateien in das Verzeichnis .dist
         .pipe(gulp.dest(config.js.dist));
-};
+}
 // IMAGES 
 function img() {
     return gulp.src('./src/images/*')
@@ -218,7 +218,7 @@ function img() {
         // Schreibe Image Dateien in das Verzeichnis .dist
         .pipe(gulp.dest('./dist/images'))
 
-};
+}
 
 // ENTFERNEN DER SOURCE MAPS 
 
@@ -228,7 +228,7 @@ function removeSourceMaps() {
         './dist/js/main.min.js.map'
     ]);
 
-};
+}
 
 // DATEIEN ÜBERWACHEN 
 function watch() {
@@ -239,7 +239,7 @@ function watch() {
         ],
         gulp.series(css, html, script, reload));
 
-};
+}
 // kompilieren des Projekts für die Produktion
 const build = gulp.series(html, css, script, img, removeSourceMaps);
 
@@ -252,4 +252,4 @@ const sync = gulp.series(serve, watch, img);
 exports.build = build;
 exports.build_dev = build_dev;
 exports.default = build;
-exports.sync = sync;
+exports.watch = sync;
