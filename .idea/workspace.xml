@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6ea43e5-318b-48b2-9c66-23d916a354a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/gulp-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/gulp-config.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="b25b7b10-4673-4718-acd5-e609401b3013" />
+  </component>
+  <component name="ProjectId" id="1gNnhPe2XCU5XpG84EjGylf8O5Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RunManager" selected="Gulp.js.default">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build_dev" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>build_dev</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="default" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>default</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gulp.js.default" />
+        <item itemvalue="Gulp.js.build_dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TYPO3Settings" version="202.5.5" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6ea43e5-318b-48b2-9c66-23d916a354a8" name="Default Changelist" comment="" />
+      <created>1597964035678</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597964035678</updated>
+      <workItem from="1597964036705" duration="1137000" />
+    </task>
+    <task id="LOCAL-00001" summary="Änderungen Gulpfile">
+      <created>1597964949486</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597964949486</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Änderungen Gulpfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Änderungen Gulpfile" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="989" y="495" key="#Inspections" timestamp="1597965086292">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state x="989" y="495" key="#Inspections/0.23.2560.1348@0.23.2560.1348" timestamp="1597965086292" />
+    <state x="861" y="188" key="#JSHint" timestamp="1597964738625">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state x="861" y="188" key="#JSHint/0.23.2560.1348@0.23.2560.1348" timestamp="1597964738625" />
+    <state x="683" y="266" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597964197386">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state x="683" y="266" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1348@0.23.2560.1348" timestamp="1597964197386" />
+    <state x="756" y="93" key="CommitChangelistDialog2" timestamp="1597964949403">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state x="756" y="93" key="CommitChangelistDialog2/0.23.2560.1348@0.23.2560.1348" timestamp="1597964949403" />
+    <state width="2340" height="304" key="GridCell.Tab.0.bottom" timestamp="1597964744292">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state width="2340" height="304" key="GridCell.Tab.0.bottom/0.23.2560.1348@0.23.2560.1348" timestamp="1597964744292" />
+    <state width="2340" height="304" key="GridCell.Tab.0.center" timestamp="1597964744292">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state width="2340" height="304" key="GridCell.Tab.0.center/0.23.2560.1348@0.23.2560.1348" timestamp="1597964744292" />
+    <state width="2340" height="304" key="GridCell.Tab.0.left" timestamp="1597964744292">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state width="2340" height="304" key="GridCell.Tab.0.left/0.23.2560.1348@0.23.2560.1348" timestamp="1597964744292" />
+    <state width="2340" height="304" key="GridCell.Tab.0.right" timestamp="1597964744292">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state width="2340" height="304" key="GridCell.Tab.0.right/0.23.2560.1348@0.23.2560.1348" timestamp="1597964744292" />
+    <state x="658" y="144" key="SettingsEditor" timestamp="1597965039015">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state x="658" y="144" key="SettingsEditor/0.23.2560.1348@0.23.2560.1348" timestamp="1597965039015" />
+    <state x="759" y="270" key="Vcs.Push.Dialog.v2" timestamp="1597964957690">
+      <screen x="0" y="23" width="2560" height="1348" />
+    </state>
+    <state x="759" y="270" key="Vcs.Push.Dialog.v2/0.23.2560.1348@0.23.2560.1348" timestamp="1597964957690" />
+  </component>
+</project>

@@ -1,5 +1,5 @@
 {
-    "name": "basis config",
+    "name": "Basis Configuration",
     "serv": {
         "src": [
             "./src"
