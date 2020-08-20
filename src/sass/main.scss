@@ -1,0 +1,20 @@
+// Color
+$color-primary: #7fffd4 !default;
+$color-secondary: #1b2431 !default;
+$color-accent: #ff4500 !default;
+$color-font: #8195b3 !default;
+$color-white: #fff !default;
+body,
+html {
+    background-color: $color-secondary;
+    color: $color-font;
+}
+
+a {
+    color: $color-primary;
+    &:hover,
+    &:visited,
+    &:focus {
+        color: $color-white;
+    }
+}
