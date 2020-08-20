@@ -1,8 +1,9 @@
 {
     "name": "basis config",
-
     "serv": {
-        "src": ["./src"],
+        "src": [
+            "./src"
+        ],
         "dist": "./dist"
     },
     "html": {
@@ -22,6 +23,11 @@
             "./src/js/**/*.js"
         ],
         "dist": "./dist/js"
+    },
+    "images": {
+        "src": [
+            "./src/images/*"
+        ],
+        "dist": "./dist/images"
     }
-
 }

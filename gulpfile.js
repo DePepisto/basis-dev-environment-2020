@@ -32,8 +32,6 @@ const babel = require('gulp-babel');
 const jshint = require('gulp-jshint');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
-const gulpPlumber = require('gulp-plumber');
-
 
 
 // BROWSER RELOAD
@@ -43,7 +41,7 @@ function reload(cb) {
     cb();
 }
 
-// SERVER INITIALISIEREN 
+// SERVER INITIALISIEREN
 
 function serve(cb) {
     browserSync.init({
@@ -57,11 +55,11 @@ function serve(cb) {
 // HTML für die Entwicklung
 
 function html_dev() {
-    // Alle HTML Dateien im SRC Ordner aufnehmen 
+    // Alle HTML Dateien im SRC Ordner aufnehmen
     return gulp.src(config.html.src)
         // Init Plumber
         .pipe(plumber())
-        // HTML -> minimierte HTML Version nach DEV Einstellungen 
+        // HTML -> minimierte HTML Version nach DEV Einstellungen
         .pipe(htmlmin({
             collapseWhitespace: false,
             removeComments: false,
@@ -78,11 +76,11 @@ function html_dev() {
 // HTML MINIFY
 
 function html() {
-    // Alle HTML Dateien im SRC Ordner aufnehmen 
+    // Alle HTML Dateien im SRC Ordner aufnehmen
     return gulp.src(config.html.src)
         // Init Plumber
         .pipe(plumber())
-        // HTML -> minimierte HTML Version mit den Einstellungen für die Live Version  
+        // HTML -> minimierte HTML Version mit den Einstellungen für die Live Version
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true,
@@ -98,7 +96,7 @@ function html() {
 
 // CSS für die Entwicklung.
 function css_dev() {
-    // Alle SASS Dateien aus folgendem Ordner 
+    // Alle SASS Dateien aus folgendem Ordner
     return gulp.src(config.sass.src)
         // Init Plumber
         .pipe(plumber())
@@ -108,7 +106,7 @@ function css_dev() {
                 formatter: 'compact',
                 'merge-default-rules': false
             },
-            files: { ignore: '**/*.sass' },
+            files: {ignore: '**/*.sass'},
             rules: {
                 'no-ids': 1,
                 'no-mergeable-selectors': 0
@@ -119,16 +117,16 @@ function css_dev() {
         // Start Source Map
         .pipe(sourcemaps.init())
         // SCSS compilieren -> CSS
-        .pipe(sass.sync({ outputStyle: "compact" })).on('error', sass.logError)
+        .pipe(sass.sync({outputStyle: "compact"})).on('error', sass.logError)
         // Suffix hinzufügen
-        .pipe(rename({ basename: 'main', suffix: ".min" }))
-        // HInzufügen von Autoprefixes & cssNano
+        .pipe(rename({basename: 'main', suffix: ".min"}))
+        // Hinzufügen von Auto Prefixes & cssNano
         .pipe(postcss([autoprefixer()]))
         // Schreibe CSS Source Map
         .pipe(sourcemaps.write(''))
         // Schreibe CSS Dateien in das Verzeichnis .dist
         .pipe(gulp.dest(config.sass.dist))
-        // Page aktualisieren 
+        // Page aktualisieren
         .pipe(browserSync.stream());
 
 }
@@ -136,7 +134,7 @@ function css_dev() {
 // SASS ZU CSS MINIFY
 
 function css() {
-    // Alle SASS Dateien aus folgendem Ordner 
+    // Alle SASS Dateien aus folgendem Ordner
     return gulp.src(config.sass.src)
         // Init Plumber
         .pipe(plumber())
@@ -146,7 +144,7 @@ function css() {
                 formatter: 'stylish',
                 'merge-default-rules': false
             },
-            files: { ignore: '**/*.sass' },
+            files: {ignore: '**/*.sass'},
             rules: {
                 'no-ids': 1,
                 'no-mergeable-selectors': 0
@@ -157,22 +155,23 @@ function css() {
         // Start Source Map
         .pipe(sourcemaps.init())
         // SCSS compilieren -> CSS
-        .pipe(sass.sync({ outputStyle: "compressed" })).on('error', sass.logError)
+        .pipe(sass.sync({outputStyle: "compressed"})).on('error', sass.logError)
         // Suffix hinzufügen
-        .pipe(rename({ basename: 'main', suffix: ".min" }))
-        // HInzufügen von Autoprefixes & cssNano
+        .pipe(rename({basename: 'main', suffix: ".min"}))
+        // Hinzufügen von Auto Prefixes & cssNano
         .pipe(postcss([autoprefixer(), cssnano()]))
         // Schreibe CSS Source Map
         .pipe(sourcemaps.write(''))
         // Schreibe CSS Dateien in das Verzeichnis .dist
         .pipe(gulp.dest(config.sass.dist))
-        // Page aktualisieren 
+        // Page aktualisieren
         .pipe(browserSync.stream());
 
 }
-// KOMPILIEREN JAVASCRIPT 
+
+// KOMPILIEREN JAVASCRIPT
 function script() {
-    // JavaScript Dateien aufnehmen 
+    // JavaScript Dateien aufnehmen
     return gulp.src(config.js.src)
         // Init Plumber
         .pipe(plumber(((error) => {
@@ -193,34 +192,35 @@ function script() {
         // Minify
         .pipe(uglify())
         // Suffix hinzufügen
-        .pipe(rename({ basename: 'main', suffix: ".min" }))
+        .pipe(rename({basename: 'main', suffix: ".min"}))
         // Schreibe Sourcemap
         .pipe(sourcemaps.write(''))
         // Schreibe JavaScript Dateien in das Verzeichnis .dist
         .pipe(gulp.dest(config.js.dist));
 }
-// IMAGES 
+
+// IMAGES
 function img() {
-    return gulp.src('./src/images/*')
+    return gulp.src(config.images.src)
         .pipe(imagemin(
             [
-                imagemin.gifsicle({ interlaced: true }),
-                imagemin.mozjpeg({ quality: 75, progressive: true }),
-                imagemin.optipng({ optimizationLevel: 5 }),
+                imagemin.gifsicle({interlaced: true}),
+                imagemin.mozjpeg({quality: 75, progressive: true}),
+                imagemin.optipng({optimizationLevel: 5}),
                 imagemin.svgo({
                     plugins: [
-                        { removeViewBox: true },
-                        { cleanupIDs: false }
+                        {removeViewBox: true},
+                        {cleanupIDs: false}
                     ]
                 })
             ]
         ))
         // Schreibe Image Dateien in das Verzeichnis .dist
-        .pipe(gulp.dest('./dist/images'))
+        .pipe(gulp.dest(config.images.dist))
 
 }
 
-// ENTFERNEN DER SOURCE MAPS 
+// ENTFERNEN DER SOURCE MAPS
 
 function removeSourceMaps() {
     return del([
@@ -230,7 +230,7 @@ function removeSourceMaps() {
 
 }
 
-// DATEIEN ÜBERWACHEN 
+// DATEIEN ÜBERWACHEN
 function watch() {
     gulp.watch([
             './src/*.html',
@@ -245,6 +245,7 @@ const build = gulp.series(html, css, script, img, removeSourceMaps);
 
 // kompilieren der Dateien während der Entwicklung + BrowserSync + Watch
 const build_dev = gulp.series(html_dev, css_dev, script, img, serve, watch);
+
 // Watch
 const sync = gulp.series(serve, watch, img);
 
